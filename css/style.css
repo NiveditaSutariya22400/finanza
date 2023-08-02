@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+:root {
+  --text-website:#011A41;
+  --text-website-rgb:1, 26, 65;
+  --bs-primary:#355efc;
+  --bs-primary-rgb:53, 94, 252;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.text-website {
+  color: var(--text-website);
+}
+
+.margin-top {
+  margin-top: 650px;
+}
+
+.padding-80 {
+  padding: 80px 0px;
+}
+
+.open-sans {
+  font-family: "Open Sans";
+}
+
+.jost {
+  font-family: "Jost";
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.offcanvas {
+  z-index: 99999;
+}
+
+header {
+  z-index: 9999;
+}
+header .mainbar {
+  z-index: 7;
+}
+header .mainbar nav ul li:hover .dropdown-menu {
+  display: block;
+}
+header nav .icon {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(53, 93, 252, 0.3607843137);
+  color: var(--bs-primary);
+}
+header .nav-item {
+  font-family: "Open Sans";
+}
+
+.navbar li:hover {
+  color: var(--bs-primary) !important;
+}
+
+.banner {
+  background-size: contain;
+}
+.banner .banner-anchor {
+  font-family: "Open Sans";
+  font-weight: 500;
+}
+.banner .carousel-item img {
+  width: 100%;
+}
+
+.counter {
+  background: linear-gradient(rgba(53, 94, 252, 0.95), rgba(53, 94, 252, 0.95)), url(../img/bg.png);
+}
+
+.choose .card {
+  transition: all 1s;
+  color: var(--text-website);
+}
+.choose .card:hover {
+  background-color: #355efc;
+  color: white;
+}
+.choose .card:hover a {
+  color: white;
+}
+
+.service .tab-pane img {
+  width: 300px;
+}
+
+.project {
+  padding-top: 520px;
+}
+.project .img-box {
+  z-index: 2;
+}
+.project .img-box:hover .icon-box {
+  opacity: 1;
+}
+.project .img-box:hover .project-back {
+  background-color: var(--bs-primary);
+  border-color: #355efc !important;
+  color: #ffffff;
+}
+.project .project-back {
+  top: 50px;
+  z-index: -1;
+  left: 50px;
+  transition: all 1s;
+}
+.project .icon-box {
+  opacity: 0;
+  transition: all 1s;
+}
+.project .swiper-pagination {
+  margin-top: 200px;
+}
+.project .swiper {
+  margin-top: 50px;
+}
+
+.team .team-box {
+  margin-top: 70px;
+  position: relative;
+  z-index: 2;
+  transition: all 1s;
+}
+.team .team-box:hover .team-content {
+  background-color: #355efc;
+  color: white;
+}
+.team .team-box:hover .btn-square {
+  background-color: #ffffff !important;
+}
+.team .team-box .team-content {
+  position: absolute;
+  width: 80%;
+  height: 120%;
+  bottom: -45px;
+  left: 40px;
+  z-index: -4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 1s;
+}
+.team .team-box .team-logo .btn-square {
+  background-color: rgba(53, 93, 252, 0.4352941176);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  width: 38px;
+  height: 38px;
+  transition: all 1s;
+}
+.team .team-box .team-logo .btn-square:hover {
+  background-color: rgba(19, 20, 25, 0.2549019608) !important;
+}
+.team .team-box .team-logo .btn-square:hover i {
+  color: white !important;
+}
+
+.testi .testimonial {
+  width: 100%;
+  height: 150px;
+  margin: 15px;
+  position: relative;
+  transition: all 1s;
+}
+.testi .testimonial:hover {
+  background-color: #355efc;
+  color: #ffffff;
+}
+.testi .testimonial:hover .testi-icon {
+  transition: all 1s;
+}
+.testi .testimonial:hover .testi-icon i {
+  color: var(--text-website) !important;
+}
+.testi .testimonial .testi-icon {
+  position: absolute;
+  left: 140px;
+  top: -45px;
+  transition: all 1s;
+}
+.testi h4 {
+  font-family: "Jost";
+  color: var(--text-website);
+  margin-top: 10px;
+  font-size: 24px;
+}
+.testi span {
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+
+.footer-bg {
+  background-color: #011A41;
+}
+.footer-bg .social {
+  margin: 0px 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  transition: all 1s;
+}
+.footer-bg .social:hover {
+  background-color: #ffffff;
+}
+.footer-bg .social:hover i {
+  color: #000b1c !important;
+}
+.footer-bg .footer-light {
+  background-color: #000b1c;
+}
+.footer-bg .s-hover li {
+  transition: all 1s;
+}
+.footer-bg .s-hover li:hover {
+  color: #355efc;
+  letter-spacing: 2px;
+}
+.footer-bg .footer-back h6 {
+  transition: all 1s;
+}
+.footer-bg .footer-back h6:hover span {
+  color: #355efc;
+}
+
+.a-banner {
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+.pro .img-box {
+  z-index: 2;
+}
+.pro .img-box:hover .icon-box {
+  opacity: 1;
+}
+.pro .img-box:hover .project-back {
+  background-color: var(--bs-primary);
+  border-color: #355efc !important;
+  color: #ffffff;
+}
+.pro .project-back {
+  top: 50px;
+  z-index: -1;
+  left: 50px;
+  transition: all 1s;
+}
+.pro .icon-box {
+  opacity: 0;
+  transition: all 1s;
+}
+.pro .swiper-pagination {
+  margin-top: 100px;
+}
+.pro .swiper {
+  margin-top: 50px;
+}
+
+* {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 9999999;
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 0.3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+  z-index: 999999;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+
+.loader {
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  color: #051eff;
+  letter-spacing: 2px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.loader::after {
+  content: "Finanza";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: animloader 6s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+.main-box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(53, 93, 252, 0.3607843137);
+}/*# sourceMappingURL=style.css.map */

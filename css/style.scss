@@ -1,0 +1,424 @@
+:root{
+    --text-website:#011A41;
+    --text-website-rgb:1, 26, 65;
+    --bs-primary:#355efc;
+    --bs-primary-rgb:53, 94, 252;
+}   
+html{
+    scroll-behavior: smooth;
+}
+.text-website{
+    color: var(--text-website);
+}
+.margin-top{
+    margin-top: 650px;
+}
+.padding-80{
+    padding: 80px 0px;
+}
+.open-sans{
+    font-family: 'Open Sans';
+}
+.jost{
+    font-family: 'Jost';
+}
+.font-24{
+    font-size: 24px;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-14{
+    font-size: 14px;
+}
+.offcanvas{
+    z-index: 99999;
+}
+// headersection
+header{
+    z-index: 9999;
+    .mainbar{
+        z-index: 7;
+        nav{
+            ul{
+                li{
+                    &:hover{
+                        .dropdown-menu{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   nav{
+    .icon{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #355dfc5c;
+        color: var(--bs-primary);
+    }
+   }
+   .nav-item{
+    font-family: 'Open Sans';
+   }
+     
+   
+}
+.navbar{
+    li{
+        &:hover {
+            color:var(--bs-primary) !important;
+        }
+     }
+}
+// bannersection
+.banner{
+    // background-position: center;
+  
+    background-size: contain;
+    .banner-anchor{
+        font-family: 'Open Sans';
+        font-weight: 500;
+    }   
+    .carousel-item{
+        img{
+            width: 100%;
+        }
+    }
+ 
+}
+// countersection
+
+.counter{
+    background:linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png) ;
+}
+//choosesection
+
+.choose{
+    .card{
+        transition: all 1s;
+        color: var(--text-website);
+        &:hover{
+            background-color: #355efc;
+            color: white;
+            a{
+                color: white;
+            }
+        }
+    }
+}
+// servicessection
+
+.service{
+    .tab-pane{
+        img{
+            width: 300px;
+        }
+    }
+}
+// projectsection
+.project{
+    padding-top: 520px;
+    .img-box{
+        z-index: 2;
+        &:hover{
+            .icon-box{
+                opacity: 1;
+            }
+        }
+        &:hover{
+            .project-back{
+                background-color: var(--bs-primary);
+                border-color: #355efc !important;
+                color: #ffffff;
+            }
+        }
+    }
+    .project-back{
+        top: 50px;
+        z-index: -1;
+        left: 50px;
+        transition: all 1s;
+        // padding: auto;;
+    }
+    .icon-box{
+        opacity: 0;
+        transition: all 1s;
+    }
+    .swiper-pagination{
+        margin-top: 200px;
+    }
+    .swiper{
+        margin-top: 50px;
+    }
+}
+//  teamsection
+
+.team{
+ 
+    .team-box{
+        margin-top: 70px;
+        position: relative;
+        z-index: 2;
+        transition: all 1s;
+        &:hover{
+            .team-content{
+                background-color: #355efc;
+                color: white;
+            }
+            .btn-square{
+                background-color: #ffffff !important;
+            }
+            
+        }
+        .team-content{
+            position: absolute;
+            width: 80%;
+            height: 120%;
+            bottom: -45px;
+            left: 40px;
+            z-index:-4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 1s;
+        }
+        .team-logo{
+            .btn-square{
+               background-color: #355dfc6f;
+                padding: 0;
+              display: flex;
+             align-items: center;
+            justify-content: center;
+            font-weight: normal;
+            width: 38px;
+            height: 38px;
+            transition: all 1s;
+            &:hover{
+                
+                 background-color:#13141941 !important;
+                 i{
+                    color:white !important;
+                 }
+               }
+            }
+        }
+        }
+    }
+// testimonialsection
+
+.testi{
+    .testimonial{
+        width: 100%;
+        height: 150px;
+        margin: 15px;
+        position: relative;
+        transition: all 1s;
+        &:hover{
+            background-color: #355efc;
+            color: #ffffff;
+            .testi-icon{
+                transition: all 1s;
+               i{
+                color: var(--text-website) !important;
+               }
+            }
+        }
+        .testi-icon{
+            position: absolute;
+            left: 140px;
+            top: -45px;
+            transition: all 1s;
+            // background-color: #ffffff;
+        }
+    }
+    h4{
+        font-family: 'Jost';
+        color: var(--text-website);
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    span{
+        font-family: 'Open Sans';
+        font-size: 16px;
+    }
+
+}
+// footersection
+
+.footer-bg{
+    background-color: #011A41;
+    .social{
+        margin:0px 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 40px;
+        transition: all 1s;
+        &:hover{
+            background-color: #ffffff;
+            i{
+                color: #000b1c !important;
+            }
+        }
+    }
+    .footer-light{
+        background-color: #000b1c;
+    }
+    .s-hover{
+       
+       
+            li{
+                 transition: all 1s;
+                 &:hover{
+                color: #355efc;
+                letter-spacing:2px;
+                }
+            }
+        
+    }
+    .footer-back{
+        h6{
+            transition: all 1s;
+            &:hover{
+                span{
+                    color: #355efc;
+                }
+            }
+        }
+    }
+}
+
+
+
+// aboutpage
+.a-banner{
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+
+// project page 
+.pro{
+   
+    .img-box{
+        z-index: 2;
+        &:hover{
+            .icon-box{
+                opacity: 1;
+            }
+        }
+        &:hover{
+            .project-back{
+                background-color: var(--bs-primary);
+                border-color: #355efc !important;
+                color: #ffffff;
+            }
+        }
+    }
+    .project-back{
+        top: 50px;
+        z-index: -1;
+        left: 50px;
+        transition: all 1s;
+        // padding: auto;;
+    }
+    .icon-box{
+        opacity: 0;
+        transition: all 1s;
+    }
+    .swiper-pagination{
+        margin-top: 100px;
+    }
+    .swiper{
+        margin-top: 50px;
+    }
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 9999999;
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: .3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index: 999999;
+}
+.cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+  }
+
+//   loadersection
+.loader {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    color: #051eff;
+    letter-spacing: 2px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .loader::after {
+    content: 'Finanza';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: animloader 6s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      height: 100%;
+    }
+    100% {
+      height: 0%;
+    }
+  }  
+.main-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #355dfc5c;
+}
